@@ -4,8 +4,8 @@ Image-to-image style tranfering solution written with C++ and CUDA based on [thi
 ## How to use
 Create two 128x128 images:
 * "StyleSource.png" - source image of the style.
-* "ContentSource.png" - destination image for the style.
-Put these two pictures in the program folder and run the program.
+* "ContentSource.png" - destination image for the style.<br/>
+Put these two pictures in the program folder and run the program.<br/>
 You'll be able to see the output in the "StyleOutput.png" image file.
 
 ## Acknowledgements
