@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F389DD9C-103E-451A-81F0-0A157AEDB0CD}</ProjectGuid>
+    <RootNamespace>CUDA_NN</RootNamespace>
+    <ProjectName>StyleChanger</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\VSPJ\CUDA_NN</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\VSPJ\CUDA_NN</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_50,sm_50</CodeGeneration>
+      <Include>E:\VSPJ\CUDA_NN</Include>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_50,sm_50</CodeGeneration>
+      <Include>E:\VSPJ\CUDA_NN</Include>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CudaCompile Include="Main.cpp" />
+    <CudaCompile Include="NN\ActivationFunctions.cu" />
+    <CudaCompile Include="NN\CUDA\CUDA_ActivationFunctions.cu" />
+    <CudaCompile Include="NN\CUDA\CUDA_func.cu" />
+    <CudaCompile Include="NN\File.cu" />
+    <CudaCompile Include="NN\Layers\ActivationLayer.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\ConcatLayer.cu" />
+    <CudaCompile Include="NN\Layers\ConvolutionLayer.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\DenseLayer.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\GramLayer.cu" />
+    <CudaCompile Include="NN\Layers\InputLayer.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\InstanceNormLayer.cu" />
+    <CudaCompile Include="NN\Layers\Layer.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\PaddingLayer.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\PoolAvgLayer.cu" />
+    <CudaCompile Include="NN\Layers\PoolMaxLayer.cu" />
+    <CudaCompile Include="NN\Layers\RearrangeLayer.cu" />
+    <CudaCompile Include="NN\Layers\SumLayer.cu" />
+    <CudaCompile Include="NN\Layers\UpscaleLayer.cu" />
+    <CudaCompile Include="NN\Model.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Optimizers\Adam.cu">
+      <FileType>CppCode</FileType>
+    </CudaCompile>
+    <CudaCompile Include="NN\Optimizers\SGD.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NN\ActivationFunctions.h" />
+    <ClInclude Include="NN\CUDA\CUDA_ActivationFunctions.h" />
+    <ClInclude Include="NN\CUDA\CUDA_func.h" />
+    <ClInclude Include="NN\File.h" />
+    <ClInclude Include="NN\Layers.h" />
+    <ClInclude Include="NN\Layers\ActivationLayer.h" />
+    <ClInclude Include="NN\Layers\ConcatLayer.h" />
+    <ClInclude Include="NN\Layers\ConvolutionLayer.h" />
+    <ClInclude Include="NN\Layers\DenseLayer.h" />
+    <ClInclude Include="NN\Layers\GramLayer.h" />
+    <ClInclude Include="NN\Layers\InputLayer.h" />
+    <ClInclude Include="NN\Layers\InstanceNormLayer.h" />
+    <ClInclude Include="NN\Layers\Layer.h" />
+    <ClInclude Include="NN\Layers\PaddingLayer.h" />
+    <ClInclude Include="NN\Layers\PoolAvgLayer.h" />
+    <ClInclude Include="NN\Layers\PoolMaxLayer.h" />
+    <ClInclude Include="NN\Layers\RearrangeLayer.h" />
+    <ClInclude Include="NN\Layers\SumLayer.h" />
+    <ClInclude Include="NN\Layers\UpscaleLayer.h" />
+    <ClInclude Include="NN\Model.h" />
+    <ClInclude Include="NN\Optimizers.h" />
+    <ClInclude Include="NN\Optimizers\SGD.h" />
+    <ClInclude Include="Simplex\SimplexNoise.h" />
+    <CudaCompile Include="NN\Optimizers\Adam.h" />
+    <ClInclude Include="NN\Optimizers\Optimizer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.0.targets" />
+  </ImportGroup>
+</Project>

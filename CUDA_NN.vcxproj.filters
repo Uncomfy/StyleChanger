@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{eb987e84-c523-49f8-8976-4873150ffbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{0131b016-2b3f-4ece-988d-41d189ef165f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\NN">
+      <UniqueIdentifier>{7f8e86db-8a7d-4494-9333-c2b8641d3a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\NN\Layers">
+      <UniqueIdentifier>{d5d522ad-4361-47bc-b921-1929a8e707f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\NN\Optimizers">
+      <UniqueIdentifier>{86109a77-6f55-4fc4-bd0d-7e5b79108482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\NN">
+      <UniqueIdentifier>{72eec5fb-2d35-447c-a0bc-34e221e5db24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\NN\Layers">
+      <UniqueIdentifier>{4f3b5e15-f671-4424-bf39-64f9af13024e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\NN\Optimizers">
+      <UniqueIdentifier>{836952cb-fc52-4e26-adba-c60d36c998b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\NN\CUDA">
+      <UniqueIdentifier>{ae8826fe-dd43-4787-869f-803284720d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\NN\CUDA">
+      <UniqueIdentifier>{c8a62593-2f07-4152-99db-f6f8f1487d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Simplex">
+      <UniqueIdentifier>{a7d95ca5-83fc-4ffc-836a-fec1925b5dab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NN\ActivationFunctions.h">
+      <Filter>Headers\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers.h">
+      <Filter>Headers\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Model.h">
+      <Filter>Headers\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Optimizers.h">
+      <Filter>Headers\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\ActivationLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\ConvolutionLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\DenseLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\InputLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\Layer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\PaddingLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Optimizers\Optimizer.h">
+      <Filter>Headers\NN\Optimizers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\CUDA\CUDA_func.h">
+      <Filter>Headers\NN\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\CUDA\CUDA_ActivationFunctions.h">
+      <Filter>Headers\NN\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\PoolMaxLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\GramLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\ConcatLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\PoolAvgLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\UpscaleLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Optimizers\SGD.h">
+      <Filter>Headers\NN\Optimizers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\File.h">
+      <Filter>Headers\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\RearrangeLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\SumLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layers\InstanceNormLayer.h">
+      <Filter>Headers\NN\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Simplex\SimplexNoise.h">
+      <Filter>Headers\Simplex</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="NN\CUDA\CUDA_func.cu">
+      <Filter>Sources\NN\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\ActivationLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\ConvolutionLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\DenseLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\InputLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\Layer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\PaddingLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Optimizers\Adam.cu">
+      <Filter>Sources\NN\Optimizers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Optimizers\Adam.h">
+      <Filter>Headers\NN\Optimizers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\CUDA\CUDA_ActivationFunctions.cu">
+      <Filter>Sources\NN\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Model.cu">
+      <Filter>Sources\NN</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\PoolMaxLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\GramLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\ConcatLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Main.cpp" />
+    <CudaCompile Include="NN\Layers\PoolAvgLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\UpscaleLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Optimizers\SGD.cu">
+      <Filter>Sources\NN\Optimizers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\File.cu">
+      <Filter>Sources\NN</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\ActivationFunctions.cu">
+      <Filter>Sources\NN</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\RearrangeLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\SumLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NN\Layers\InstanceNormLayer.cu">
+      <Filter>Sources\NN\Layers</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
