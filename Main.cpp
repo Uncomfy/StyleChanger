@@ -306,7 +306,7 @@ int main()
 
         image_output.save("StyleOutput.png");
 
-        cout << "Iteration " << iteration++ << ", loss: " << tloss << endl;
+        cout << "Iteration " << iteration++ << endl;
     }
 
     return 0;
