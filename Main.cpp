@@ -195,6 +195,13 @@ int main()
     float* pars = new float[par_size];
     fread(pars, 4, par_size, fin);
     fclose(fin);
+
+    if (!NN::File::is_little_endian()) {
+        for (int i = 0; i < par_size; i++) {
+            pars[i] = NN::File::invert(pars[i]);
+        }
+    }
+
     model.set_parameters(pars);
     cout << "Done." << endl << endl;
 
