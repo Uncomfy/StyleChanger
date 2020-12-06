@@ -24,8 +24,17 @@ int main()
     srand(time(NULL));
 
     float change_rate = 1.0f;
-    float content_coef = 1e-3f;
+    float content_coef = 1e-2f;
     float style_coef = 1.0f;
+
+    cout << "Enter the change rate: ";
+    cin >> change_rate;
+
+    cout << "Enter the content coefficient: ";
+    cin >> content_coef;
+
+    cout << "Enter the style coefficient: ";
+    cin >> style_coef;
 
     vector<float> bgr_mean = { 103.939, 116.779, 123.68 };
 
@@ -230,7 +239,7 @@ int main()
     for (int k = 0; k < 3; k++) {
         for (int j = 0; j < 128; j++) {
             for (int x = 0; x < 128; x++) {
-                output_data[(k * 128 + j) * 128 + x] = 0.0;
+                output_data[(k * 128 + j) * 128 + x] = content_data[(k * 128 + j) * 128 + x];
             }
         }
     }
@@ -306,7 +315,7 @@ int main()
 
         image_output.save("StyleOutput.png");
 
-        cout << "Iteration " << iteration++ << endl;
+        cout << "Iteration " << iteration++ << ", loss: " << tloss << endl;
     }
 
     return 0;
