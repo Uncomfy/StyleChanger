@@ -180,7 +180,7 @@ namespace NN {
             case 5:
                 return new NN::AF::Softmax;
             default:
-                break;
+                return new NN::AF::Sigmoid;
             }
         }
     }
