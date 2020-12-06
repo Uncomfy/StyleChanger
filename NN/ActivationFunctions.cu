@@ -1,8 +1,8 @@
 #include <algorithm>
 #include <cmath>
 
-#include "NN/ActivationFunctions.h"
-#include "NN/CUDA/CUDA_ActivationFunctions.h"
+#include "ActivationFunctions.h"
+#include "CUDA/CUDA_ActivationFunctions.h"
 
 using namespace std;
 

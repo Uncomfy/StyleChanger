@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/DenseLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "DenseLayer.h"
 
 using namespace std;
 

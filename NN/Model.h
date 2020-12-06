@@ -4,9 +4,9 @@
 #include <cstdio>
 #include <vector>
 
-#include "NN/Layers/Layer.h"
-#include "NN/Layers/InputLayer.h"
-#include "NN/Optimizers/Optimizer.h"
+#include "Layers/Layer.h"
+#include "Layers/InputLayer.h"
+#include "Optimizers/Optimizer.h"
 
 namespace NN {
     class Model {

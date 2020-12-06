@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/PaddingLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "PaddingLayer.h"
 
 using namespace std;
 

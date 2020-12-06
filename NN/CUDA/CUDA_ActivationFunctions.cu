@@ -1,6 +1,6 @@
 #include <math.h>
 
-#include "NN/CUDA/CUDA_ActivationFunctions.h"
+#include "CUDA_ActivationFunctions.h"
 
 namespace NN {
 	namespace CUDA {

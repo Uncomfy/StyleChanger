@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/PoolAvgLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "PoolAvgLayer.h"
 
 using namespace std;
 

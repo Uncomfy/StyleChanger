@@ -1,7 +1,7 @@
 #include <algorithm>
 
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/SumLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "SumLayer.h"
 
 using namespace std;
 

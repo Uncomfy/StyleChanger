@@ -1,10 +1,10 @@
 #ifndef NN_OPTIMIZERS_H_INCLUDED
 #define NN_OPTIMIZERS_H_INCLUDED
 
-#include "NN/Optimizers/Optimizer.h"
+#include "Optimizers/Optimizer.h"
 
-#include "NN/Optimizers/Adam.h"
-#include "NN/Optimizers/SGD.h"
+#include "Optimizers/Adam.h"
+#include "Optimizers/SGD.h"
 
 namespace NN {
     namespace Optimizers {

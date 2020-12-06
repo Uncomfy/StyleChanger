@@ -1,7 +1,7 @@
 #ifndef NN_OPTIMIZERS_ADAM_H_INCLUDED
 #define NN_OPTIMIZERS_ADAM_H_INCLUDED
 
-#include "NN/Optimizers/Optimizer.h"
+#include "Optimizer.h"
 
 namespace NN {
     namespace Optimizers {

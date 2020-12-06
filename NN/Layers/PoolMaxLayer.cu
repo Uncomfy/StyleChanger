@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/PoolMaxLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "PoolMaxLayer.h"
 
 using namespace std;
 

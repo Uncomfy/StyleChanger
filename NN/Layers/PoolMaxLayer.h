@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <vector>
 
-#include "NN/Layers/Layer.h"
+#include "Layer.h"
 
 namespace NN {
 	namespace Layers {

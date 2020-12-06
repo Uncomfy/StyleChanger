@@ -1,6 +1,6 @@
 #pragma once
 
-#include "NN/Optimizers/Optimizer.h"
+#include "Optimizer.h"
 
 namespace NN {
     namespace Optimizers {

@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/ConvolutionLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "ConvolutionLayer.h"
 
 using namespace std;
 

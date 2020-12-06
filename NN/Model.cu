@@ -1,10 +1,10 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "NN/File.h"
-#include "NN/Layers.h"
-#include "NN/Model.h"
-#include "NN/Optimizers.h"
+#include "File.h"
+#include "Layers.h"
+#include "Model.h"
+#include "Optimizers.h"
 
 using namespace std;
 

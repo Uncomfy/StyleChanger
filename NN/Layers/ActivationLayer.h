@@ -4,8 +4,8 @@
 #include <cstdio>
 #include <vector>
 
-#include "NN/ActivationFunctions.h"
-#include "NN/Layers/Layer.h"
+#include "../ActivationFunctions.h"
+#include "Layer.h"
 
 namespace NN {
     namespace Layers {

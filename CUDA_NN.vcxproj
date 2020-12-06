@@ -45,7 +45,7 @@
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\VSPJ\CUDA_NN</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\VSPJ\CUDA_NN</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -82,7 +82,8 @@
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
       <CodeGeneration>compute_35,sm_35;compute_37,sm_37;compute_50,sm_50;compute_52,sm_52;compute_60,sm_60;compute_61,sm_61;compute_70,sm_70;compute_75,sm_75;compute_80,sm_80;</CodeGeneration>
-      <Include>E:\VSPJ\CUDA_NN</Include>
+      <Include>
+      </Include>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -148,7 +149,6 @@
     <ClInclude Include="NN\Model.h" />
     <ClInclude Include="NN\Optimizers.h" />
     <ClInclude Include="NN\Optimizers\SGD.h" />
-    <ClInclude Include="Simplex\SimplexNoise.h" />
     <CudaCompile Include="NN\Optimizers\Adam.h" />
     <ClInclude Include="NN\Optimizers\Optimizer.h" />
   </ItemGroup>

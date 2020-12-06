@@ -1,7 +1,7 @@
 #include <cmath>
 
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Optimizers/Adam.h"
+#include "../CUDA/CUDA_func.h"
+#include "Adam.h"
 
 using namespace std;
 

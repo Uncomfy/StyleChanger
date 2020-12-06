@@ -1,7 +1,7 @@
 #include <cmath>
 
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Optimizers/SGD.h"
+#include "../CUDA/CUDA_func.h"
+#include "SGD.h"
 
 using namespace std;
 

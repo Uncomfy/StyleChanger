@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/GramLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "GramLayer.h"
 
 using namespace std;
 

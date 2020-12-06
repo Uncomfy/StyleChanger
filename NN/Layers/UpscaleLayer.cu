@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/UpscaleLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "UpscaleLayer.h"
 
 using namespace std;
 

@@ -1,4 +1,4 @@
-#include "NN/Layers/Layer.h"
+#include "Layer.h"
 
 using namespace std;
 

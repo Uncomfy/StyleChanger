@@ -1,4 +1,4 @@
-#include "NN/Layers/ActivationLayer.h"
+#include "ActivationLayer.h"
 
 using namespace std;
 

@@ -1,21 +1,21 @@
 #ifndef NN_LAYERS_H_INCLUDED
 #define NN_LAYERS_H_INCLUDED
 
-#include "NN/Layers/Layer.h"
+#include "Layers/Layer.h"
 
-#include "NN/Layers/ActivationLayer.h"
-#include "NN/Layers/ConcatLayer.h"
-#include "NN/Layers/ConvolutionLayer.h"
-#include "NN/Layers/DenseLayer.h"
-#include "NN/Layers/GramLayer.h"
-#include "NN/Layers/InputLayer.h"
-#include "NN/Layers/InstanceNormLayer.h"
-#include "NN/Layers/PaddingLayer.h"
-#include "NN/Layers/PoolAvgLayer.h"
-#include "NN/Layers/PoolMaxLayer.h"
-#include "NN/Layers/RearrangeLayer.h"
-#include "NN/Layers/SumLayer.h"
-#include "NN/Layers/UpscaleLayer.h"
+#include "Layers/ActivationLayer.h"
+#include "Layers/ConcatLayer.h"
+#include "Layers/ConvolutionLayer.h"
+#include "Layers/DenseLayer.h"
+#include "Layers/GramLayer.h"
+#include "Layers/InputLayer.h"
+#include "Layers/InstanceNormLayer.h"
+#include "Layers/PaddingLayer.h"
+#include "Layers/PoolAvgLayer.h"
+#include "Layers/PoolMaxLayer.h"
+#include "Layers/RearrangeLayer.h"
+#include "Layers/SumLayer.h"
+#include "Layers/UpscaleLayer.h"
 
 namespace NN {
 	namespace Layers {

@@ -31,9 +31,6 @@
     <Filter Include="Headers\NN\CUDA">
       <UniqueIdentifier>{c8a62593-2f07-4152-99db-f6f8f1487d69}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers\Simplex">
-      <UniqueIdentifier>{a7d95ca5-83fc-4ffc-836a-fec1925b5dab}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NN\ActivationFunctions.h">
@@ -104,9 +101,6 @@
     </ClInclude>
     <ClInclude Include="NN\Layers\InstanceNormLayer.h">
       <Filter>Headers\NN\Layers</Filter>
-    </ClInclude>
-    <ClInclude Include="Simplex\SimplexNoise.h">
-      <Filter>Headers\Simplex</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

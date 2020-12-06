@@ -1,5 +1,5 @@
-#include "NN/CUDA/CUDA_func.h"
-#include "NN/Layers/InputLayer.h"
+#include "../CUDA/CUDA_func.h"
+#include "InputLayer.h"
 
 using namespace std;
 

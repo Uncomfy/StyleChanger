@@ -1,4 +1,4 @@
-#include "NN/Layers/ConcatLayer.h"
+#include "ConcatLayer.h"
 
 using namespace std;
 

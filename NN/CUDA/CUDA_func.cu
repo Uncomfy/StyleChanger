@@ -1,4 +1,5 @@
 #include <algorithm>
+#include "CUDA_func.h"
 
 namespace NN {
 	namespace CUDA {

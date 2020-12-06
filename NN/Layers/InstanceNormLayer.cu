@@ -1,6 +1,6 @@
 #include <cmath>
 
-#include "NN/Layers/InstanceNormLayer.h"
+#include "InstanceNormLayer.h"
 
 using namespace std;
 
