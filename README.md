@@ -7,6 +7,11 @@ Create two 128x128 images:
 * "ContentSource.png" - destination image for the style.  
   
 Put these two pictures in the program folder and run the program.  
+Enter the required variables:
+* "Change rate" - rate, at which the original image is changed.
+* "Content coefficient" - weight of the "content" component from "ContentSource.png" image.
+* "Style coefficient" - weight of the "style" component from "StyleSource.png" image.  
+
 You'll be able to see the output in the "StyleOutput.png" image file.
 
 ## Acknowledgements
