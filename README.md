@@ -1,5 +1,5 @@
 # StyleChanger
-Image-to-image style transferring solution written with C++ and CUDA based on [this](https://arxiv.org/abs/1508.06576) article and [VGG19](https://keras.io/api/applications/vgg/).
+Image-to-image style transferring solution written with C++ and CUDA 11.0 based on [this](https://arxiv.org/abs/1508.06576) article and [VGG19](https://keras.io/api/applications/vgg/).
 
 ## How to use
 Create two 128x128 images:
